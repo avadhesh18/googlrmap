@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Apkbee</title>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="style.css"/>
+<script src="phonegap.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" /> 
+<script>
+document.addEventListener("touchstart", function(){}, true);
+</script>
+<style>* {
+    margin: 0 auto;
+    padding: 0;
+    text-align: CENTER;
+    font-family: sans-serif;
+}
+
+h1 {
+    background: red;
+    color: WHITE;
+    margin-bottom: 10px;
+    padding: 7px;
+    font-size: 1em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.copy {
+    background: #f2f2f2;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.map {
+    margin-top: 50px;
+}</style>
+</head>
+<body>
+<h1>Jaishree Ka Google Map :)</h1>
+<div class="map"><script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:200px;width:240px;'><div id='gmap_canvas' style='height:200px;width:240px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(26.9124336,75.78727090000007),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(26.9124336,75.78727090000007)});infowindow = new google.maps.InfoWindow({content:'<strong>Jaishree yhi h shayad</strong><br>Japipur, India<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></div>
+
+ 
+
+
+
+</body>
+</html>
